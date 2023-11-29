@@ -1,0 +1,75 @@
+{
+    "Format": "1.0",
+    "Quests": [
+      {
+        "Name": "abigail_amethyst", // No id needed, will be automatically generated
+        "Type": "ItemDelivery", // Vanilla quest type
+        "Title": "The purple lunch",
+        "Description": "Abigail is very hungry. She wants to eat something special from the ocean.",
+        "Objective": "Bring fish to Abigail",
+        "Reward": 300, // 300g
+        "Cancelable": true,
+        "Trigger": "Abigail 129", // Bring amethyst to Abby
+        "ReactionText": "Oh, this looks so delicious. I am really hungry, thank you, @!$h"
+      },
+      {
+        "Name": "TestTalkQuest",
+        "Type": "PurrplingCat.QuestEssentials/Talk",
+        "Title": "Talk with Linus",
+        "Description": "Linus wants talk with you.",
+        "Objective": "Talk to Linus",
+        "Cancelable": true,
+        "Trigger": "Linus"
+      },
+      {
+        "Name": "TestStoryQuest",
+        "Type": "PurrplingCat.QuestEssentials/Adventure",
+        "Title": "Unbeatable Creatures",
+        "Description": "You've defeated the holly berries! MUWHAHAHA",
+        "Tasks": [
+          
+          {
+            "Name": "TestTask1",
+            "Type": "Talk",
+            "Description": "Talk with the Igloo Builder",
+            "Data": {
+              "NpcName": "Linus",
+              "DialogueText": "hmm yes I've built some igloos in my day, have I mentioned this before?#$b#Very preseptive aren't you.#$b#I'd be happy to share my knowledge but I need a few ingredints first!"
+            }
+          },
+          {
+            "Name": "TestTask2",
+            "Type": "Deliver",
+            "Description": "Deliver Stones to Linus",
+            "Data": {
+              "NpcName": "Linus",
+              "AcceptedContextTags": "item_stone", // same format as for Special Orders
+              "Message": "Thank you for the STONE!$l",
+              "NotEnoughMessage": "Thank you! I still need {0} more of these, though!$h"
+            },
+            "Goal": 10,
+            "RequiredTasks": [
+              "TestTask1"
+            ]
+          }
+        ],
+        "Reward": 6000,
+        "Cancelable": false
+      }
+    ],
+    "Offers": [
+
+      {
+        "QuestName": "TestStoryQuest",
+        "OfferedBy": "NPC",
+        "OfferDetails": {
+          "NpcName": "Abigail",
+          "DialogueText": "I sense you are a great detective and I'm in need of your assistance @#$b#. You've proabaly noticed the caves have become overtaken by different critter, but these critters are immune to all weapons I've used.#$b#Legond says an old Igloo Builder once knew how to forge this weapon. Find them!"
+        },
+        "When": {
+            "DaysOfWeek": "Monday Tuesday Wednesday Thursday Friday Saturday Sunday",
+            "Seasons": "spring fall"
+        }
+      }
+    ]
+  }
