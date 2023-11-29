@@ -1,0 +1,12 @@
+{
+  "Name": "BloominDaisy - New Creatures",
+  "Author": "BloominDaisy",
+  "Version": "1.0.0",
+  "Description": "Custom Mine Creatures",
+  "UniqueID": "BloominDaisy.Creatures",
+  "ContentPackFor":{
+	  "UniqueID":"Pathoschild.ContentPatcher",
+	  "MinimumVersion":"1.23.3"
+  },
+  "UpdateKeys": []
+}

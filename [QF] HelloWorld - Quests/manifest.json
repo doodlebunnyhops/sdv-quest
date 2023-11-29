@@ -1,9 +1,9 @@
 {
-    "Name": "HelloWorld",
-    "Author": "bloomindaisy",
+    "Name": "BloominDaisy - Quests",
+    "Author": "BloominDaisy",
     "Version": "1.0.0",
     "Description": "One or two sentences about the mod.",
-    "UniqueID": "bloomindaisy.HelloWorld",
+    "UniqueID": "BloominDaisy.Quests",
     "UpdateKeys": [],
     "ContentPackFor": {
       "UniqueID": "PurrplingCat.QuestFramework"

@@ -1,0 +1,29 @@
+{
+	"Format":"1.23.0",
+	"Changes":[
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Monsters/Bug",
+			"FromFile": "assets/Bug.png",
+            "When": {
+				"DaysPlayed": 6,
+				// "LocationName": "Mine",
+                "LocationName |contains=UndergroundMine1, UndergroundMine2, UndergroundMine3, UndergroundMine4, UndergroundMine5, UndergroundMine6, UndergroundMine7, UndergroundMine8, UndergroundMine9, UndergroundMine10, UndergroundMine11, UndergroundMine12, UndergroundMine13, UndergroundMine14, UndergroundMine15, UndergroundMine16, UndergroundMine17, UndergroundMine18, UndergroundMine19, UndergroundMine20, UndergroundMine21, UndergroundMine22, UndergroundMine23, UndergroundMine24, UndergroundMine25, UndergroundMine26, UndergroundMine27, UndergroundMine28, UndergroundMine29, UndergroundMine30, UndergroundMine31, UndergroundMine32, UndergroundMine33, UndergroundMine34, UndergroundMine35, UndergroundMine36, UndergroundMine37, UndergroundMine38, UndergroundMine39": true,
+				"HasMod": "BloominDaisy.Quests"
+			},
+			"Update": "OnLocationChange"
+		},
+        // {
+        //     "Action": "EditData",
+        //     "Target": "Data/Monsters",
+        //     "Entries": {
+		// 		"BBug": "1/8/0/0/false/2000/684 .76 157 .02 114 .005 96 .005 99 .001/0/0/-1/2/.0/true/1/BBug"
+        //     }
+        // },
+		// {
+		// 	"Action": "Load",
+		// 	"Target": "Characters/Monsters/BBug",
+		// 	"FromFile": "assets/BBug.png"
+		// }
+	]
+}
